@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Оформление заявки</title>
+	<link class="styles" rel="stylesheet" href="vendor/bootstrap/css/bootstrap.min.css">
+	<link rel="stylesheet" href="css/index.css">
+</head>
+<body>
+    <header class="site-header">
+		<div class="site-header__inner">
+			<a class="site-header__link" href="index.html">
+				<h1 class="site-header__logo">ShopProject</h1>
+			</a>
+	
+			<nav class="site-nav" aria-label="Основная навигация">
+				<ul class="site-nav__list">
+					<li class="site-nav__item">
+						<a class="site-nav__link" href="index.html">
+							Главная
+						</a>
+					</li>
+					<li class="site-nav__item">
+						<a class="site-nav__link" href="catalog.html">Каталог</a>
+					</li>
+					<li class="site-nav__item">
+						<a class="site-nav__link" href="product.html">Товар</a>
+					</li>
+                    <li class="site-nav__item">
+						<a class="site-nav__link site-nav__link--active" href="order.html">Заказ</a>
+					</li>
+                    <li class="site-nav__item">
+						<a class="site-nav__link" href="contacts.html">Контакты</a>
+					</li>
+				</ul>
+			</nav>
+		</div>
+	</header>
+
+	<main>
+		<div class="container my-5">
+			<h2 class="font-weight-bold mb-4">Оформление заявки</h2>
+			
+			<form class="order-form" id="order-form" action="#" method="post">
+				<div class="form-row">
+					<div class="form-group col-md-6">
+						<label for="firstName" class="font-weight-bold">Имя</label>
+						<input type="text" class="form-control" id="firstName" name="first_name" placeholder="Иван" required>
+					</div>
+					<div class="form-group col-md-6">
+						<label for="lastName" class="font-weight-bold">Фамилия</label>
+						<input type="text" class="form-control" id="lastName" name="last_name" placeholder="Иванов" required>
+					</div>
+				</div>
+
+				<div class="form-group">
+					<label for="email" class="font-weight-bold">E-mail</label>
+					<input type="email" class="form-control" id="email" name="email" placeholder="example@mail.ru" required>
+				</div>
+
+				<div class="form-group">
+					<label for="phone" class="font-weight-bold">Телефон</label>
+					<input type="tel" class="form-control" id="phone" name="phone" placeholder="+7 (999) 123-45-67" required>
+				</div>
+
+				<div class="form-group">
+					<label for="productSelect" class="font-weight-bold">Выбранный товар</label>
+					<select class="custom-select" id="productSelect" name="product">
+						<option value="product1">Товар 1 (Огурец)</option>
+						<option value="product2">Товар 2 (Вантуз)</option>
+						<option value="product3">Товар 3 (Лужа)</option>
+						<option value="product4">Товар 4 (Футболка 1С)</option>
+						<option value="product5">Товар 5 (Логика)</option>
+						<option value="beer_belt">Ремень для пива с пряжкой</option>
+					</select>
+				</div>
+
+				<button type="submit" class="btn btn-primary btn-lg mt-3">Отправить заявку</button>
+			</form>
+		</div>
+		<p class="success-message hidden" id="success-message">
+			Форма успешно отправлена!
+		</p>
+	</main>
+
+    <footer class="bg-light border-top">
+        <div class="container">
+            <p class="mb-1 text-muted">&copy; 2026 Учебный проект. Все права защищены.</p>
+            <small class="text-secondary">Дисциплина: Фронтенд и бэкенд разработка</small>
+        </div>
+    </footer>
+
+	<script src="./js/main.js"></script>
+</body>
+</html>

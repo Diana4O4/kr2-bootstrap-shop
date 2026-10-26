@@ -1,0 +1,156 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ShopProject — Учебный интернет-магазин</title>
+    <!-- Локальное подключение Bootstrap CSS -->
+    <link rel="stylesheet" href="vendor/bootstrap/css/bootstrap.min.css">
+    <!-- Собственный файл стилей подключается строго после Bootstrap -->
+    <link rel="stylesheet" href="css/index.css">
+</head>
+<body>
+	<header class="site-header">
+		<div class="site-header__inner">
+			<a class="site-header__link" href="index.html">
+				<h1 class="site-header__logo">ShopProject</h1>
+			</a>
+			
+			<nav class="site-nav" aria-label="Основная навигация">
+				<ul class="site-nav__list">
+					<li class="site-nav__item">
+						<a class="site-nav__link site-nav__link--active" href="index.html">
+							Главная
+						</a>
+					</li>
+					<li class="site-nav__item">
+						<a class="site-nav__link" href="catalog.html">Каталог</a>
+					</li>
+					<li class="site-nav__item">
+						<a class="site-nav__link" href="product.html">Товар</a>
+					</li>
+                    <li class="site-nav__item">
+						<a class="site-nav__link" href="order.html">Заказ</a>
+					</li>
+                    <li class="site-nav__item">
+						<a class="site-nav__link" href="contacts.html">Контакты</a>
+					</li>
+				</ul>
+			</nav>
+		</div>
+	</header>
+	
+	<main>
+		<div id="heroCarousel" class="carousel slide my-4" data-ride="carousel">
+			<div class="carousel-inner rounded container">
+				<div class="carousel-item active bg-primary text-white text-center py-5">
+					<h1 class="display-4 font-weight-bold">Учебный интернет-магазин</h1>
+					<p class="lead">Это стартовая страница учебного frontend-проекта.</p>
+					<a href="catalog.html" class="btn btn-light btn-lg mt-3">Перейти к товарам</a>
+				</div>
+				<div class="carousel-item bg-dark text-white text-center py-5">
+					<h1 class="display-4 font-weight-bold">Изучаем Bootstrap v4</h1>
+					<p class="lead">Разработка адаптивных интерфейсов стала проще.</p>
+					<a href="order.html" class="btn btn-success btn-lg mt-3">Оформить заявку</a>
+				</div>
+			</div>
+			<a class="carousel-control-prev" href="#heroCarousel" role="button" data-slide="prev">
+				<span class="carousel-control-prev-icon" aria-hidden="true"></span>
+			</a>
+			<a class="carousel-control-next" href="#heroCarousel" role="button" data-slide="next">
+				<span class="carousel-control-next-icon" aria-hidden="true"></span>
+			</a>
+		</div>
+	
+		<div class="container my-5">
+			<h2 class="text-center mb-4">Преимущества проекта</h2>
+			<div class="row text-center">
+				<div class="col-md-3 mb-3">
+					<div class="p-3 border rounded bg-white shadow-sm h-100">
+						<h5 class="font-weight-bold text-primary">HTML5</h5>
+						<p class="text-muted mb-0">Понятная HTML-структура и семантические блоки.</p>
+					</div>
+				</div>
+				<div class="col-md-3 mb-3">
+					<div class="p-3 border rounded bg-white shadow-sm h-100">
+						<h5 class="font-weight-bold text-primary">CSS3</h5>
+						<p class="text-muted mb-0">Подключение внешнего CSS-файла для кастомизации.</p>
+					</div>
+				</div>
+				<div class="col-md-3 mb-3">
+					<div class="p-3 border rounded bg-white shadow-sm h-100">
+						<h5 class="font-weight-bold text-primary">Bootstrap</h5>
+						<p class="text-muted mb-0">Адаптивная сетка и готовые компоненты фреймворка.</p>
+					</div>
+				</div>
+				<div class="col-md-3 mb-3">
+					<div class="p-3 border rounded bg-white shadow-sm h-100">
+						<h5 class="font-weight-bold text-primary">Многостраничность</h5>
+						<p class="text-muted mb-0">Подготовка к полноценной разработке сайта.</p>
+					</div>
+				</div>
+			</div>
+		</div>
+	
+		<div class="container my-5">
+			<h2 class="mb-4">Популярные товары</h2>
+			<div class="products-grid">
+				<article class="product-card product-card--featured">
+					<img
+						src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcS6Hznjh05R3tJBnQBAkFkQ_r0Eqyp_QMualQKSxzbH0Q&s=10"
+						alt="огурец"
+						class="product-card__img"
+					>
+					<h3 class="product-card__title">Товар 1</h3>
+					<p class="product-card__description">Краткое описание учебного товара.</p>
+					<p class="product-card__price">Цена: 1000 руб.</p>
+					<a class="product__link" href="order.html">
+						<button class="button button--primary" type="button" data-product="Товар 1">
+							Заказать
+						</button>
+					</a>
+				</article>
+				<article class="product-card product-card--featured">
+					<img
+						src="https://s3.ibta.ru/goods/603635/7811b95396ac2d6cbb587b24eb1a3e54_x.jpg"
+						alt="вантуз"
+						class="product-card__img"
+					>
+					<h3 class="product-card__title">Товар 2</h3>
+					<p class="product-card__description">Краткое описание учебного товара.</p>
+					<p class="product-card__price">Цена: 1500 руб.</p>
+					<a class="product__link" href="order.html">
+						<button class="button button--primary" type="button" data-product="Товар 2">
+							Заказать
+						</button>
+					</a>
+				</article>
+				<article class="product-card product-card--featured">
+					<img
+						src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcT_a5mUOmqvB0c9bLl8L8jIrkW_5NqTx1Rv_eGyvNyYxqPCCY2EvabaKNCe&s=10"
+						alt="логика"
+						class="product-card__img"
+					>
+					<h3 class="product-card__title">Товар 5</h3>
+					<p class="product-card__description">Краткое описание учебного товара.</p>
+					<p class="product-card__price">Цена: 3000 руб.</p>
+					<a class="product__link" href="order.html">
+						<button class="button button--primary" type="button" data-product="Товар 5">
+							Заказать
+						</button>
+					</a>
+				</article>
+			</div>
+		</div>
+	</main>
+
+    <footer class="bg-light border-top">
+        <div class="container">
+            <p class="mb-1 text-muted">&copy; 2026 Учебный проект. Все права защищены.</p>
+            <small class="text-secondary">Дисциплина: Фронтенд и бэкенд разработка</small>
+        </div>
+    </footer>
+
+    <script src="vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>

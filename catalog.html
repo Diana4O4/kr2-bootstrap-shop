@@ -1,0 +1,170 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Каталог товаров — ShopProject</title>
+    <link rel="stylesheet" href="vendor/bootstrap/css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/index.css">
+</head>
+<body>
+    <header class="site-header">
+		<div class="site-header__inner">
+			<a class="site-header__link" href="index.html">
+				<h1 class="site-header__logo">ShopProject</h1>
+			</a>
+	
+			<nav class="site-nav" aria-label="Основная навигация">
+				<ul class="site-nav__list">
+					<li class="site-nav__item">
+						<a class="site-nav__link" href="index.html">
+							Главная
+						</a>
+					</li>
+					<li class="site-nav__item">
+						<a class="site-nav__link site-nav__link--active" href="catalog.html">Каталог</a>
+					</li>
+					<li class="site-nav__item">
+						<a class="site-nav__link" href="product.html">Товар</a>
+					</li>
+                    <li class="site-nav__item">
+						<a class="site-nav__link" href="order.html">Заказ</a>
+					</li>
+                    <li class="site-nav__item">
+						<a class="site-nav__link" href="contacts.html">Контакты</a>
+					</li>
+				</ul>
+			</nav>
+		</div>
+	</header>
+
+	<main>
+		<div class="container my-4">
+			<h1 class="mb-4">Каталог товаров</h1>
+			
+			<div class="row">
+				<div class="col-lg-3">
+					<div class="p-3 border rounded bg-white shadow-sm">
+						<h5 class="font-weight-bold mb-3">Фильтры</h5>
+						<form>
+							<div class="form-group">
+								<label class="font-weight-bold">Категория</label>
+								<select class="custom-select">
+									<option value="all">Все товары</option>
+									<option value="popular">Популярные</option>
+									<option value="new">Новинки</option>
+								</select>
+							</div>
+							<div class="form-group">
+								<label class="font-weight-bold">Цена</label>
+								<div class="d-flex align-items-center">
+									<input type="number" class="form-control mr-2" placeholder="От">
+									<input type="number" class="form-control" placeholder="До">
+								</div>
+							</div>
+							<button type="submit" class="btn btn-outline-primary btn-block">Применить</button>
+						</form>
+					</div>
+				</div>
+				
+				<div class="products-flex">
+					<article class="product-card product-card--featured conteiner">
+						<img
+						src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcS6Hznjh05R3tJBnQBAkFkQ_r0Eqyp_QMualQKSxzbH0Q&s=10"
+						alt="огурец"
+						class="product-card__img"
+						>
+						<div class="product-card__info">
+							<h3 class="product-card__title">Товар 1</h3>
+							<p class="product-card__description">Краткое описание учебного товара.</p>
+							<p class="product-card__price">Цена: 1000 руб.</p>
+							<a class="product__link" href="order.html">
+								<button class="button button--primary" type="button" data-product="Товар 1">
+									Заказать
+								</button>
+							</a>
+						</div>
+					</article>
+					<article class="product-card product-card--featured conteiner">
+						<img
+							src="https://s3.ibta.ru/goods/603635/7811b95396ac2d6cbb587b24eb1a3e54_x.jpg"
+							alt="вантуз"
+							class="product-card__img"
+						>
+						<div class="product-card__info">
+							<h3 class="product-card__title">Товар 2</h3>
+							<p class="product-card__description">Краткое описание учебного товара.</p>
+							<p class="product-card__price">Цена: 1500 руб.</p>
+							<a class="product__link" href="order.html">
+								<button class="button button--primary" type="button" data-product="Товар 2">
+									Заказать
+								</button>
+							</a>
+						</div>
+					</article>
+					<article class="product-card product-card--featured conteiner">
+						<img
+							src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTrXjTDM70g5jECNku5Cvksy4sXrAaTKhpG64vhex9sJ-91n_2jSAoWbgo&s=10"
+							alt="лужа"
+							class="product-card__img"
+						>
+						<div class="product-card__info">
+							<h3 class="product-card__title">Товар 3</h3>
+							<p class="product-card__description">Краткое описание учебного товара.</p>
+							<p class="product-card__price">Цена: 2000 руб.</p>
+							<a class="product__link" href="order.html">
+								<button class="button button--primary" type="button" data-product="Товар 3">
+									Заказать
+								</button>
+							</a>
+						</div>
+					</article>
+					<article class="product-card product-card--featured conteiner">
+						<img
+							src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcS3iCOf28sMOY7Daf7rXnux900goTzs7S6xh9VF2sWAC-rXmiiCAYQarZc&s=10"
+							alt="Футболка 1С"
+							class="product-card__img"
+						>
+						<div class="product-card__info">
+							<h3 class="product-card__title">Товар 4</h3>
+							<p class="product-card__description">Краткое описание учебного товара.</p>
+							<p class="product-card__price">Цена: 2500 руб.</p>
+							<a class="product__link" href="order.html">
+								<button class="button button--primary" type="button" data-product="Товар 4">
+									Заказать
+								</button>
+							</a>
+						</div>
+					</article>
+					<article class="product-card product-card--featured conteiner">
+						<img
+							src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcT_a5mUOmqvB0c9bLl8L8jIrkW_5NqTx1Rv_eGyvNyYxqPCCY2EvabaKNCe&s=10"
+							alt="логика"
+							class="product-card__img"
+						>
+						<div class="product-card__info">
+							<h3 class="product-card__title">Товар 5</h3>
+							<p class="product-card__description">Краткое описание учебного товара.</p>
+							<p class="product-card__price">Цена: 3000 руб.</p>
+							<a class="product__link" href="order.html">
+								<button class="button button--primary" type="button" data-product="Товар 5">
+									Заказать
+								</button>
+							</a>
+						</div>
+					</article>
+				</div>
+			</div>
+		</div>
+	</main>
+
+    <footer class="bg-light border-top">
+        <div class="container">
+            <p class="mb-1 text-muted">&copy; 2026 Учебный проект. Все права защищены.</p>
+            <small class="text-secondary">Дисциплина: Фронтенд и бэкенд разработка</small>
+        </div>
+    </footer>
+
+    <script src="vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>
