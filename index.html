@@ -5,37 +5,26 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>ShopProject — Учебный интернет-магазин</title>
     <link rel="stylesheet" href="vendor/bootstrap/css/bootstrap.min.css">
-    <link rel="stylesheet" href="css/index.css">
 </head>
 <body>
-	<header class="site-header">
-		<div class="site-header__inner">
-			<a class="site-header__link" href="index.html">
-				<h1 class="site-header__logo">ShopProject</h1>
-			</a>
-			
-			<nav class="site-nav" aria-label="Основная навигация">
-				<ul class="site-nav__list">
-					<li class="site-nav__item">
-						<a class="site-nav__link site-nav__link--active" href="index.html">
-							Главная
-						</a>
-					</li>
-					<li class="site-nav__item">
-						<a class="site-nav__link" href="catalog.html">Каталог</a>
-					</li>
-					<li class="site-nav__item">
-						<a class="site-nav__link" href="product.html">Товар</a>
-					</li>
-                    <li class="site-nav__item">
-						<a class="site-nav__link" href="order.html">Заказ</a>
-					</li>
-                    <li class="site-nav__item">
-						<a class="site-nav__link" href="contacts.html">Контакты</a>
-					</li>
+	<header>
+		<nav class="navbar navbar-expand-lg navbar-light bg-light border-bottom">
+			<div class="container">
+			<a class="navbar-brand font-weight-bold" href="index.html">ShopProject</a>
+			<button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav">
+				<span class="navbar-toggler-icon"></span>
+			</button>
+			<div class="collapse navbar-collapse" id="navbarNav">
+				<ul class="navbar-nav ml-auto">
+				<li class="nav-item active"><a class="nav-link" href="index.html">Главная</a></li>
+				<li class="nav-item"><a class="nav-link" href="catalog.html">Каталог</a></li>
+				<li class="nav-item"><a class="nav-link" href="product.html">Товар</a></li>
+				<li class="nav-item"><a class="nav-link" href="order.html">Заказ</a></li>
+				<li class="nav-item"><a class="nav-link" href="contacts.html">Контакты</a></li>
 				</ul>
-			</nav>
-		</div>
+			</div>
+			</div>
+		</nav>
 	</header>
 	
 	<main>
@@ -90,65 +79,54 @@
 			</div>
 		</div>
 	
-		<div class="container my-5">
-			<h2 class="mb-4">Популярные товары</h2>
-			<div class="products-grid">
-				<article class="product-card product-card--featured">
-					<img
-						src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcS6Hznjh05R3tJBnQBAkFkQ_r0Eqyp_QMualQKSxzbH0Q&s=10"
-						alt="огурец"
-						class="product-card__img"
-					>
-					<h3 class="product-card__title">Товар 1</h3>
-					<p class="product-card__description">Краткое описание учебного товара.</p>
-					<p class="product-card__price">Цена: 1000 руб.</p>
-					<a class="product__link" href="order.html">
-						<button class="button button--primary" type="button" data-product="Товар 1">
-							Заказать
-						</button>
-					</a>
-				</article>
-				<article class="product-card product-card--featured">
-					<img
-						src="https://s3.ibta.ru/goods/603635/7811b95396ac2d6cbb587b24eb1a3e54_x.jpg"
-						alt="вантуз"
-						class="product-card__img"
-					>
-					<h3 class="product-card__title">Товар 2</h3>
-					<p class="product-card__description">Краткое описание учебного товара.</p>
-					<p class="product-card__price">Цена: 1500 руб.</p>
-					<a class="product__link" href="order.html">
-						<button class="button button--primary" type="button" data-product="Товар 2">
-							Заказать
-						</button>
-					</a>
-				</article>
-				<article class="product-card product-card--featured">
-					<img
-						src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcT_a5mUOmqvB0c9bLl8L8jIrkW_5NqTx1Rv_eGyvNyYxqPCCY2EvabaKNCe&s=10"
-						alt="логика"
-						class="product-card__img"
-					>
-					<h3 class="product-card__title">Товар 5</h3>
-					<p class="product-card__description">Краткое описание учебного товара.</p>
-					<p class="product-card__price">Цена: 3000 руб.</p>
-					<a class="product__link" href="order.html">
-						<button class="button button--primary" type="button" data-product="Товар 5">
-							Заказать
-						</button>
-					</a>
-				</article>
+		<section class="container mb-5">
+			<h2 class="font-weight-bold mb-4">Популярные товары</h2>
+			<div class="row">
+				<div class="col-md-4 mb-4">
+					<div class="card h-100">
+						<div class="card-body">
+							<p class="text-muted mb-2">огурец</p>
+							<h3 class="font-weight-bold">Товар 1</h3>
+							<p>Краткое описание учебного товара.</p>
+							<p class="font-weight-bold">Цена: 1000 руб.</p>
+							<a href="order.html" class="btn btn-primary">Заказать</a>
+						</div>
+					</div>
+				</div>
+				<div class="col-md-4 mb-4">
+					<div class="card h-100">
+						<div class="card-body">
+							<p class="text-muted mb-2">вантуз</p>
+							<h3 class="font-weight-bold">Товар 2</h3>
+							<p>Краткое описание учебного товара.</p>
+							<p class="font-weight-bold">Цена: 1500 руб.</p>
+							<a href="order.html" class="btn btn-primary">Заказать</a>
+						</div>
+					</div>
+				</div>
+				<div class="col-md-4 mb-4">
+					<div class="card h-100">
+						<div class="card-body">
+							<p class="text-muted mb-2">логика</p>
+							<h3 class="font-weight-bold">Товар 5</h3>
+							<p>Краткое описание учебного товара.</p>
+							<p class="font-weight-bold">Цена: 3000 руб.</p>
+							<a href="order.html" class="btn btn-primary">Заказать</a>
+						</div>
+					</div>
+				</div>
 			</div>
-		</div>
+		</section>
 	</main>
 
     <footer class="bg-light border-top">
         <div class="container">
-            <p class="mb-1 text-muted">&copy; 2026 Учебный проект. Все права защищены.</p>
+            <p class="mb-1 text-muted ">&copy; 2026 Учебный проект. Все права защищены.</p>
             <small class="text-secondary">Дисциплина: Фронтенд и бэкенд разработка</small>
         </div>
     </footer>
 
+	<script src="https://jsdelivr.net"></script>
     <script src="vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
 </body>
 </html>
