@@ -5,22 +5,23 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Контакты</title>
 	<link rel="stylesheet" href="vendor/bootstrap/css/bootstrap.min.css">
+	<link rel="stylesheet" href="./vendor/bootstrap/css/index.css">
 </head>
 <body>
 	<header>
 		<nav class="navbar navbar-expand-lg navbar-light bg-light border-bottom">
 			<div class="container">
 			<a class="navbar-brand font-weight-bold" href="index.html">ShopProject</a>
-			<button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav">
+			<button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
 				<span class="navbar-toggler-icon"></span>
 			</button>
 			<div class="collapse navbar-collapse" id="navbarNav">
 				<ul class="navbar-nav ml-auto">
-				<li class="nav-item active"><a class="nav-link" href="index.html">Главная</a></li>
+				<li class="nav-item"><a class="nav-link" href="index.html">Главная</a></li>
 				<li class="nav-item"><a class="nav-link" href="catalog.html">Каталог</a></li>
 				<li class="nav-item"><a class="nav-link" href="product.html">Товар</a></li>
 				<li class="nav-item"><a class="nav-link" href="order.html">Заказ</a></li>
-				<li class="nav-item"><a class="nav-link" href="contacts.html">Контакты</a></li>
+				<li class="nav-item active"><a class="nav-link" href="contacts.html">Контакты</a></li>
 				</ul>
 			</div>
 			</div>
@@ -28,12 +29,12 @@
 	</header>
 
 	<main>
-		<section class="container">
-			<div class="conteiner my-4">
-				<h2>+7 888 666 67 52</h2>
-				<h2>dont@mail.us</h2>
+		<section class="container my-4">
+			<div class="container row">
+				<h2 class="col-md-6">+7 888 666 67 52</h2>
+				<h2 class="col-md-6">dont@mail.us</h2>
 			</div>
-			<div class="container">
+			<div class="container my-4" style="height: 65vh;">
 				<script
 					type="text/javascript"
 					charset="utf-8"
@@ -45,10 +46,12 @@
 	</main>
 
     <footer class="bg-light border-top">
-        <div class="container">
+        <div class="container py-2">
             <p class="mb-1 text-muted">&copy; 2026 Учебный проект. Все права защищены.</p>
             <small class="text-secondary">Дисциплина: Фронтенд и бэкенд разработка</small>
         </div>
     </footer>
+
+    <script src="vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
 </body>
 </html>

@@ -5,21 +5,22 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Оформление заявки</title>
 	<link class="styles" rel="stylesheet" href="vendor/bootstrap/css/bootstrap.min.css">
+	<link rel="stylesheet" href="./vendor/bootstrap/css/index.css">
 </head>
 <body>
 	<header>
 		<nav class="navbar navbar-expand-lg navbar-light bg-light border-bottom">
 			<div class="container">
 			<a class="navbar-brand font-weight-bold" href="index.html">ShopProject</a>
-			<button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav">
+			<button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
 				<span class="navbar-toggler-icon"></span>
 			</button>
 			<div class="collapse navbar-collapse" id="navbarNav">
 				<ul class="navbar-nav ml-auto">
-				<li class="nav-item active"><a class="nav-link" href="index.html">Главная</a></li>
+				<li class="nav-item"><a class="nav-link" href="index.html">Главная</a></li>
 				<li class="nav-item"><a class="nav-link" href="catalog.html">Каталог</a></li>
 				<li class="nav-item"><a class="nav-link" href="product.html">Товар</a></li>
-				<li class="nav-item"><a class="nav-link" href="order.html">Заказ</a></li>
+				<li class="nav-item active"><a class="nav-link" href="order.html">Заказ</a></li>
 				<li class="nav-item"><a class="nav-link" href="contacts.html">Контакты</a></li>
 				</ul>
 			</div>
@@ -64,22 +65,23 @@
 						<option value="beer_belt">Ремень для пива с пряжкой</option>
 					</select>
 				</div>
-
+				
 				<button type="submit" class="btn btn-primary btn-lg mt-3">Отправить заявку</button>
+				
+				<p class="success-message hidden bg-light mt-4 px-3 py-2" id="success-message">
+					Форма успешно отправлена!
+				</p>
 			</form>
 		</div>
-		<p class="success-message hidden" id="success-message">
-			Форма успешно отправлена!
-		</p>
 	</main>
 
     <footer class="bg-light border-top">
-        <div class="container">
+        <div class="container py-2">
             <p class="mb-1 text-muted">&copy; 2026 Учебный проект. Все права защищены.</p>
             <small class="text-secondary">Дисциплина: Фронтенд и бэкенд разработка</small>
         </div>
     </footer>
 
-	<script src="./js/main.js"></script>
+	<script src="./vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
 </body>
 </html>

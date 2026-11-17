@@ -5,19 +5,20 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Каталог товаров — ShopProject</title>
     <link rel="stylesheet" href="vendor/bootstrap/css/bootstrap.min.css">
+	<link rel="stylesheet" href="./vendor/bootstrap/css/index.css">
 </head>
 <body>
 	<header>
 		<nav class="navbar navbar-expand-lg navbar-light bg-light border-bottom">
 			<div class="container">
 			<a class="navbar-brand font-weight-bold" href="index.html">ShopProject</a>
-			<button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav">
+			<button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
 				<span class="navbar-toggler-icon"></span>
 			</button>
 			<div class="collapse navbar-collapse" id="navbarNav">
 				<ul class="navbar-nav ml-auto">
-				<li class="nav-item active"><a class="nav-link" href="index.html">Главная</a></li>
-				<li class="nav-item"><a class="nav-link" href="catalog.html">Каталог</a></li>
+				<li class="nav-item"><a class="nav-link" href="index.html">Главная</a></li>
+				<li class="nav-item active"><a class="nav-link" href="catalog.html">Каталог</a></li>
 				<li class="nav-item"><a class="nav-link" href="product.html">Товар</a></li>
 				<li class="nav-item"><a class="nav-link" href="order.html">Заказ</a></li>
 				<li class="nav-item"><a class="nav-link" href="contacts.html">Контакты</a></li>
@@ -32,7 +33,9 @@
 			<h1 class="mb-4">Каталог товаров</h1>
 			
 			<div class="row">
-				<div class="col-lg-3">
+			</div>
+			<div class=" container row">
+				<div class="col-lg-3 mb-4">
 					<div class="p-3 border rounded bg-white shadow-sm">
 						<h5 class="font-weight-bold mb-3">Фильтры</h5>
 						<form>
@@ -56,8 +59,8 @@
 					</div>
 				</div>
 				
-				<div class="">
-					<div class="col-md-4 mb-4">
+				<div class="row col-lg-9">
+					<div class="col-md-6 mb-4">
 						<div class="card h-100">
 							<div class="card-body">
 								<p class="text-muted mb-2">огурец</p>
@@ -68,7 +71,7 @@
 							</div>
 						</div>
 					</div>
-					<div class="col-md-4 mb-4">
+					<div class="col-md-6 mb-4">
 						<div class="card h-100">
 							<div class="card-body">
 								<p class="text-muted mb-2">вантуз</p>
@@ -79,7 +82,7 @@
 							</div>
 						</div>
 					</div>
-					<div class="col-md-4 mb-4">
+					<div class="col-md-6 mb-4">
 						<div class="card h-100">
 							<div class="card-body">
 								<p class="text-muted mb-2">логика</p>
@@ -90,7 +93,7 @@
 							</div>
 						</div>
 					</div>
-					<div class="col-md-4 mb-4">
+					<div class="col-md-6 mb-4">
 						<div class="card h-100">
 							<div class="card-body">
 								<p class="text-muted mb-2">логика</p>
@@ -101,7 +104,7 @@
 							</div>
 						</div>
 					</div>
-					<div class="col-md-4 mb-4">
+					<div class="col-md-6 mb-4">
 						<div class="card h-100">
 							<div class="card-body">
 								<p class="text-muted mb-2">логика</p>
@@ -118,7 +121,7 @@
 	</main>
 
     <footer class="bg-light border-top">
-        <div class="container">
+        <div class="container  py-2">
             <p class="mb-1 text-muted">&copy; 2026 Учебный проект. Все права защищены.</p>
             <small class="text-secondary">Дисциплина: Фронтенд и бэкенд разработка</small>
         </div>

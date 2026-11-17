@@ -5,20 +5,21 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Ремень для пива с пряжкой — ShopProject</title>
     <link class="styles" rel="stylesheet" href="vendor/bootstrap/css/bootstrap.min.css">
+	<link rel="stylesheet" href="./vendor/bootstrap/css/index.css">
 </head>
 <body>
 	<header>
 		<nav class="navbar navbar-expand-lg navbar-light bg-light border-bottom">
 			<div class="container">
 			<a class="navbar-brand font-weight-bold" href="index.html">ShopProject</a>
-			<button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav">
+			<button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
 				<span class="navbar-toggler-icon"></span>
 			</button>
 			<div class="collapse navbar-collapse" id="navbarNav">
 				<ul class="navbar-nav ml-auto">
-				<li class="nav-item active"><a class="nav-link" href="index.html">Главная</a></li>
+				<li class="nav-item"><a class="nav-link" href="index.html">Главная</a></li>
 				<li class="nav-item"><a class="nav-link" href="catalog.html">Каталог</a></li>
-				<li class="nav-item"><a class="nav-link" href="product.html">Товар</a></li>
+				<li class="nav-item active"><a class="nav-link" href="product.html">Товар</a></li>
 				<li class="nav-item"><a class="nav-link" href="order.html">Заказ</a></li>
 				<li class="nav-item"><a class="nav-link" href="contacts.html">Контакты</a></li>
 				</ul>
@@ -30,7 +31,7 @@
 	<main>
 		<div class="container my-5">
 			<div class="row">
-				<div class="col-lg-6 mb-4">
+				<div class="col-lg-6">
 					<h1 class="font-weight-bold">Ремень для пива с пряжкой</h1>
 					<p class="text-muted">Пиво-пояс / Особый товар :O</p>
 					<hr>
@@ -44,6 +45,7 @@
 							id="img"
 							src="./images/product.jpg"
 							alt="Пиво-пояс"
+							style="width: 100%;"
 							>
 						</a>
 					</div>
@@ -86,7 +88,7 @@
 						Цена: 6767.67 руб.
 					</h3>
 					<a class="product__link" href="order.html">
-						<button class="btn button--primary btn-lg px-5" type="button" data-product="Товар 1">
+						<button class="btn btn-primary btn-lg px-5" type="button" data-product="Товар 1">
 							Заказать товар
 						</button>
 					</a>
@@ -95,8 +97,8 @@
 		</div>
 	</main>
 	
-    <footer class="bg-light py-4 border-top">
-		<div class="container">
+    <footer class="bg-light border-top">
+		<div class="container py-2">
 			<p class="mb-1 text-muted">&copy; 2026 Учебный проект. Все права reserved.</p>
             <small class="text-secondary">Дисциплина: Фронтенд и бэкенд разработка</small>
         </div>
